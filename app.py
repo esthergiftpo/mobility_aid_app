@@ -38,7 +38,7 @@ if image_data is not None:
     predicted_labels = [classes[i] for i in np.where(predicted_binary == 1)[0]]
 
     # Show result
-    st.image(image, caption="Uploaded Image", use_column_width=True)
+    st.image(image, caption="Uploaded Image", use_container_width=True)
     if predicted_labels:
         st.success("Predicted classes: " + ", ".join(predicted_labels))
     else:
